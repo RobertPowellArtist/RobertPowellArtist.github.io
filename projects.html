@@ -11,9 +11,12 @@ layout: default
 
 
 <div class="col-6 col-sm-6 col-lg-4">
+<img src={{post.imageSource}} />
 <h3>{{ post.title }}</h3>
-<h5>{{ post.date | date_to_long_string }}</h5>
-<img src={{post.imageSource}} class="col-6 col-sm-6 col-lg-4" />
+<h5>{{ post.date | date_to_long_string }} 
+
+</h5>
+
 <p>
 {{ post.summary }}
       <a href="{{ post.url }}">Read More</a>
